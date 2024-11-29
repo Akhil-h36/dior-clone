@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>aDior</title>
+    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link  href="inter.css" rel="stylesheet" type="text/css">
+    
+    
+    <body>
+        <div class="topbody">
+
+            <div class="body-vid">
+                 <div class="viedocontainer">
+                       <video class="hover-video"  muted src="Dior Cruise 2025 Campaign.mp4" ></video>
+                 </div>
+                  <div class="text-div">
+                       <h3>Fashion & Accessories</h3>
+                        <a href="google.com">shop now</a>
+                  </div>
+            </div>
+
+             <div class="body-vid">
+                 <div class="viedocontainer">
+                       <video class="hover-video"  muted src="Dior Holidays - The Atelier of Dreams 2022.mp4" ></video>
+                  
+                    </div>
+                 <div class="text-div">
+                        <h3>Fragrence & Beauty</h3>
+                         <a href="google.com">shop now</a>
+                 </div>
+              </div> 
+                <h3 class="mainfont">DIOR</h3>
+
+        </div>
+       <section class="bottom">
+         <div class="bottom-container">
+             <div class="main-container">
+                  <div class="search-section">
+                               <h2>Inspire me with all the latest Dior news</h2>
+                      <div class="search-container-section">
+                            <div class="search-input">
+                                <input type="text" placeholder="* E-mail">
+                            </div>
+                            <div class="confirm-input">
+                                 <input type="submit" value="confirm">
+                            </div>
+                      </div> 
+                  </div>
+                  <div class="accesibility-container">
+                    <P>Accessibility : Better contrast</p>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        
+                  </div>
+                  <div class="menu-container">
+                        <div class="item-menu-container">
+                            <div class="item-1">
+                                <h2>Dior Boutiques</h2>
+                                <p>Christian Dior couture</p>
+                                <p>Parfum Christian Dior</p>
+                            </div>
+                        </div>
+                        <div class="item-menu-container">
+                            <div class="item-2">
+                                <h2>Client Services</h2>
+                                <p>contact <i class="fa-solid fa-solid fa-chevron-down"></i></p>
+                                <p>Delivery and returns <i class="fa-solid fa-solid fa-chevron-down"></i></p>
+                                <p>FAQ <i class="fa-solid fa-solid fa-chevron-down"></i></p>
+                            </div>
+                        </div>
+                        <div class="item-menu-container">
+                            <div class="item-3">
+                                <h2>The House Of Dior</h2>
+                                <p>Dior Sustainability</p>
+                                <p>Ethics & Compliance</p>
+                                <p>Carrers</p>
+                            </div>
+                        </div>
+                        <div class="item-menu-container">
+                            <div class="item-4">
+                                <h2>Legal Terms</h2>
+                                <p>Legal Terms <i class="fa-solid fa-solid fa-chevron-down"></i></p>
+                                <p>Privacy notice <i class="fa-solid fa-solid fa-chevron-down"></i></p>
+                                <p>Your Privacy Choices & Cookies</p>
+                                <p>General Sales Conditions<i class="fa-solid fa-solid fa-chevron-down"></i></p>
+                                <p>Sitemap<i class="fa-solid fa-solid fa-chevron-down"></i></p>
+
+                            </div>
+                        </div>
+                  </div>
+                  <div class="last-section">
+                    <div class="social-media">
+                        <p>Follow us</p>
+                        <p>Tiktok</p>
+                        <p>instagram</p>
+                        <p>X</p>
+                        <p>Facebook</p>
+                        <p>Pintrest</p>
+                        <p>Snapchat</p>
+                        <p>Linked</p>
+                        <p>Podcast</p>
+                  </div>
+                  <div class="ending-logo">
+                    <h3>DIOR</h2>
+                  </div>
+                  <div class="language-sec">
+                    <p class="follow">country/region</p>
+                    <p class="follow-2">singapore(English)<i class="fa-solid  fa-angle-right"></i></p>
+                  </div>
+
+
+              </div>
+            </div>
+         </div>
+         
+       </section>
+     <script>
+         const videos = document.querySelectorAll('.hover-video');
+
+         videos.forEach(video => {
+         video.addEventListener('mouseenter', () => {
+         video.play();
+
+         
+         videos.forEach(otherVideo => {
+            if (otherVideo !== video) {
+                otherVideo.classList.add('dimmed');
+            } else {
+                otherVideo.classList.remove('dimmed');
+            }
+          });
+          });
+
+          video.addEventListener('mouseleave', () => {
+           video.pause();
+        
+       
+           let anyHovered = false;
+            videos.forEach(otherVideo => {
+              if (otherVideo !== video && otherVideo.matches(':hover')) {
+                anyHovered = true;
+                otherVideo.classList.remove('dimmed');
+              }
+          });
+        
+          if (!anyHovered) {
+            videos.forEach(otherVideo => otherVideo.classList.remove('dimmed'));
+          }
+          });
+          });
+     </script>
+    </body >
+
+</html>

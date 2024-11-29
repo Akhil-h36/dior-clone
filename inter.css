@@ -1,0 +1,251 @@
+
+body{
+  margin: 0;
+}
+.topbody{
+    display: flex;
+    margin:0;
+}
+.body-vid{
+    position: relative;
+    width:50%;
+   
+}
+
+.text-div{
+    transform: translate(-50%, -50%);
+    top: 80%; 
+    left: 50%;
+    position:absolute;
+    z-index:2;
+    color: white;
+}
+
+.text-div h3 {
+    font-family:"Baskervville", serif;
+    font-weight: normal;
+    margin: 0; 
+    font-size: 35px;
+}
+
+.text-div a{
+    font-family:"Baskervville", serif;
+    padding:0px 100px;
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+}
+
+.viedocontainer{
+    width: 100%;
+    background-color: black;
+}
+.viedocontainer video{
+    cursor: pointer;
+    object-fit:fill;
+    height:700px;
+    width:100%;
+    object-fit: cover;
+}
+.hover-viedo{
+    cursor: pointer;
+    height:700px;
+    width:100%;
+    object-fit:cover;
+    
+}
+.mainfont
+{
+    font-weight: normal;
+    position:absolute;
+    top:35%;
+    left: 50%;
+    translate:-50% -50%;
+    color:white;
+    font-size:100px;
+    font-family:"Baskervville SC", serif;
+}
+.dimmed {
+    opacity: 0.3; 
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 01;
+    transition: opacity 0.3s;
+}
+.bottom-container{
+    border-radius:10px;
+    margin:14px 18px;
+    border:0.3px solid rgba(22, 22, 22, 0.08);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3); 
+}
+.main-container{
+    margin:26px 35px;
+}
+.search-section h2{
+    
+    font-weight: normal;
+    color: #33383CFF;
+}
+.search-container-section{
+    display: flex;
+    height: 48px;
+    width: 34%;
+    font-family:"Baskervville", serif;
+}
+.search-input {
+    border-radius: 10px;
+    border:0.1px solid rgb(177, 171, 171);
+    align-content: center;
+    margin-right:10px;
+}
+.search-input input{
+    border: 0;
+    outline: 0;
+    width:300px;
+   
+}
+.confirm-input{
+    border-radius: 10px;
+    align-content: center;
+    background-color: rgb(37, 42, 45);
+}
+.confirm-input input{
+    width:120px;
+    outline: 0;
+    border: 0;
+    color: white;
+    background-color: rgb(37, 42, 45);
+    font-family: Hellix, ABCDiorIcons, arial, sans-serif;
+}
+.accesibility-container{
+    margin-top:40px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.accesibility-container p{
+    font-weight: 50px;
+    margin-right: 20px;
+    font-size:14px ;
+    font-weight:normal;
+    color: #33383CFF;
+    font-family: Hellix, ABCDiorIcons, arial, sans-serif;
+}
+/* Container for the toggle switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 25px;
+}
+
+/* Hide the checkbox */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Style the slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* Circle inside the slider */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Change background color when checked */
+.toggle-switch input:checked + .slider {
+    background-color: rgb(37, 42, 45);
+}
+
+/* Move the circle when checked */
+.toggle-switch input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.menu-container{
+    width:90%;
+    margin-top:25px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-container h2{
+    font-weight: normal;
+    font-size: 25px;
+    color: rgb(105, 117, 127);
+    
+}
+.menu-container p{
+    line-height:1.7;
+    color: #7B8487FF;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Hellix, ABCDiorIcons, arial, sans-serif;
+}
+.last-section{
+    
+    align-content: center;
+    display: flex;
+    height:60px;
+
+}
+.social-media{
+    display: flex;
+}
+.follow{
+    align-content: center;
+    font-family:  Hellix, ABCDiorIcons, arial, sans-serif;
+    color: #7B8487FF;
+    margin-top: 17px;
+    font-size:14px;
+}
+.social-media p{
+    align-content: center;
+    margin-right: 10px;
+    font-weight: normal;
+    font-family:  Hellix, ABCDiorIcons, arial, sans-serif;
+    font-size:14px;
+    color: #7B8487FF;
+}
+.language-sec{
+    margin-left:-80px;
+    align-content: center;
+    display: flex;
+    margin-left: auto;
+}
+.follow-2{
+    margin-left:10px;
+    align-content: center;
+    font-family:  Hellix, ABCDiorIcons, arial, sans-serif;
+    color: rgb(105, 117, 127);
+    margin-top: 17px;
+    font-size:14px;
+}
+.ending-logo {
+  
+    margin-left:150px;
+    font-family: "Baskervville", serif;
+    color: rgb(63, 68, 69);
+    margin-top: 17px;
+    font-size:30px;
+    margin-top:-30px;
+
+}
