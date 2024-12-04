@@ -120,41 +120,7 @@
          </div>
          
        </section>
-     <script>
-         const videos = document.querySelectorAll('.hover-video');
-
-         videos.forEach(video => {
-         video.addEventListener('mouseenter', () => {
-         video.play();
-
-         
-         videos.forEach(otherVideo => {
-            if (otherVideo !== video) {
-                otherVideo.classList.add('dimmed');
-            } else {
-                otherVideo.classList.remove('dimmed');
-            }
-          });
-          });
-
-          video.addEventListener('mouseleave', () => {
-           video.pause();
-        
-       
-           let anyHovered = false;
-            videos.forEach(otherVideo => {
-              if (otherVideo !== video && otherVideo.matches(':hover')) {
-                anyHovered = true;
-                otherVideo.classList.remove('dimmed');
-              }
-          });
-        
-          if (!anyHovered) {
-            videos.forEach(otherVideo => otherVideo.classList.remove('dimmed'));
-          }
-          });
-          });
-     </script>
+     
     </body >
 
 </html>
